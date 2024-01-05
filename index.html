@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos/index.css" type="text/css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Fuerza de Ventas Chile</title>
+</head>
+
+<body>
+    <!-- Estructura del menú -->
+    <ul class="menu">
+        <div class="logo"><img src="/assets/index-img/IMG-20240103-WA0017.jpg" alt="logo principal"></div>
+        <div class="content-header">
+            <li><a href="#">Inicio</a></li>
+            <li>
+                <a href="#">Servicios</a>
+                <!-- Submenú para la opción "Servicios" -->
+                <ul class="submenu">
+                    <li><a href="#">Claro - Telefonía</a></li>
+                    <li><a href="#">Vtr - Fibra óptica</a></li>
+                    <li><a href="#">Movistar - Fibra óptica</a></li>
+                    <li><a href="#">Equifax - Informes Dicom</a></li>
+                    <li><a href="#">Latasoft - Página Web Pymes</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Quienes somos</a>
+            </li>
+            <li><a href="#">Contacto</a></li>
+        </div>
+    </ul>
+    <section class="slider-section">
+        <div id="slider-container">
+            <div id="slider">
+                <div class="slide claro"><img src="/assets/slider-img/claro.jpg" alt="Imagen 1">
+                    <div class="content-overlay">
+                        <img src="/assets/slider-img/logo-claro.svg" alt="Logo claro">
+                        <h2>Servicios de Telefonía</h2>
+                        <button>Conoce aquí</button>
+                    </div>
+                </div>
+                <div class="slide vtr"><img src="/assets/slider-img/vtr.jpg" alt="Imagen 2">
+                    <div class="content-overlay">
+                        <img src="/assets/slider-img/logo-vtr.png" alt="Logo vtr">
+                        <h2>Servicios de Fibra óptica</h2>
+                        <button>Conoce aquí</button>
+                    </div>
+                </div>
+                <div class="slide movistar"><img src="/assets/slider-img/movistar.jpg" alt="Imagen 3">
+                    <div class="content-overlay">
+                        <img src="/assets/slider-img/logo-movistar.svg" alt="Logo movistar">
+                        <h2>Servicios de Fibra óptica</h2>
+                        <button>Conoce aquí</button>
+                    </div>
+                </div>
+                <div class="slide equifax"><img src="/assets/slider-img/equifax.jpg" alt="Imagen 4">
+                    <div class="content-overlay">
+                        <img src="/assets/slider-img/logo-equifax.svg" alt="Logo equifax">
+                        <h2>Informes Dicom</h2>
+                        <button>Conoce aquí</button>
+                    </div>
+                </div>
+                <div class="slide latasoft"><img src="/assets/slider-img/latasoft.jpg" alt="Imagen 5">
+                    <div class="content-overlay">
+                        <img src="/assets/slider-img/logo-latasoft.png" alt="Logo equifax">
+                        <h2>Páginas Web Pymes</h2>
+                        <button>Conoce aquí</button>
+                    </div>
+                </div>
+            </div>
+
+            <button class="slider-btn prev-btn" onclick="prevSlide()">&#8249;</button>
+            <button class="slider-btn next-btn" onclick="nextSlide()">&#8250;</button>
+
+            <div id="slider-pagination"></div>
+        </div>
+    </section>
+    <section class="seccion-dos scroll-reveal-section">
+        <img src="/assets/index-img/IMG-20240103-WA0017.jpg" alt="">
+        <h1>Fuerza de Ventas Chile</h1>
+        <p>En <span class="fuerza">Fuerza de Ventas Chile</span>, nos enorgullece ser parte de la industria de servicios
+            integrales de
+            telecomunicaciones. Nos dedicamos a proporcionar soluciones innovadoras y confiables en telefonía, fibra
+            óptica, informes y desarrollo de páginas web para satisfacer las crecientes demandas de conectividad en la
+            era digital.</p>
+        <p>Creemos en la transformación a través de la conectividad. Nuestra misión es
+            facilitar la comunicación sin límites y potenciar el crecimiento de nuestros clientes al ofrecer servicios
+            de alta calidad que impulsan la eficiencia y la productividad.</p>
+        <div class="slogan">
+            <h2>Conectamos</h2>
+            <h2>Crecemos</h2>
+            <h2>Transformamos</h2>
+        </div>
+        <p>En Fuerza de Ventas Chile, priorizamos la calidad. Nos comprometemos a brindar servicios que superen
+            las expectativas, respaldados por un equipo de profesionales altamente capacitados y apasionados por la
+            excelencia.</p>
+    </section>
+    <footer class="footer scroll-reveal-section">
+        <div class="col-uno">
+            <img src="/assets/index-img/logo blanco.png" alt="Logo fuerza de ventas">
+            <p>©Fuerza de Ventas Chile. Derechos reservados</p>
+            <a href="#">Inicio</a>
+            <a href="#">Quienes somos</a>
+        </div>
+        <div class="col-dos">
+            <p>Servicios</p>
+            <div class="footer-servicios"><a href="#">Telefonía Claro</a>
+                <a href="#">Fibra óptica VTR</a>
+                <a href="#">Fibra óptica Movistar</a>
+                <a href="#">Informes Dicom Equifax</a>
+                <a href="#">Página Web Pymes Latasoft</a>
+            </div>
+        </div>
+        <div class="col-tres">
+            <img src="/assets/index-img/qr.jpg" alt="Fuerza de ventas qr">
+            <div class="contacto-directo">
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#"><i class="fa-solid fa-phone"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

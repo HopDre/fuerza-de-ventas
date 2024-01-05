@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  background-color: #fff;
+  max-width: 100vw;
+}
+/* Header */
+.menu {
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu .logo img {
+  width: 200px;
+}
+ul.menu {
+  list-style: none;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+}
+ul.menu li {
+  display: inline-block;
+}
+ul.menu a {
+  display: block;
+  color: #039788;
+  text-decoration: none;
+  padding: 25px 20px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+ul.menu a:hover {
+  background-color: #039788;
+  color: #fff;
+}
+/* Estilos para los submenús */
+ul.submenu {
+  display: none;
+  position: absolute;
+  background-color: #5100ff;
+  border-radius: 0 0 20px 20px;
+}
+ul.submenu li {
+  display: block;
+}
+ul.submenu a {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #039788;
+  border-radius: 20px;
+}
+/* Mostrar submenús al pasar el ratón sobre los elementos del menú principal */
+ul.menu li:hover ul.submenu {
+  display: block;
+  background-color: #fff;
+}
+
+/* Slider */
+#slider-container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+#slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+  position: relative;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.content-overlay {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+.content-overlay img {
+  width: 150px;
+  margin-bottom: 40px;
+}
+.content-overlay h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.content-overlay button {
+  border-radius: 40px;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+}
+.vtr .content-overlay img{
+    width: 150px;
+}
+.vtr .content-overlay button{
+    background-color: #66489C;
+}
+.movistar .content-overlay img{
+    width: 300px;
+}
+.movistar .content-overlay button{
+    background-color: #00ABE1;
+}
+.equifax .content-overlay img{
+    width: 300px;
+}
+.equifax .content-overlay button{
+    background-color: #B32541;
+}
+.latasoft .content-overlay img{
+    width: 300px;
+}
+.latasoft .content-overlay button{
+    background-color: #F2F62B;
+    color: #039788;
+}
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  font-size: 24px;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 2;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+.slider-btn:hover {
+  background-color: #555;
+}
+
+#slider-pagination {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  z-index: 2;
+}
+.pagination-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #888;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.pagination-dot.active {
+  background-color: #fff;
+}
+/* Seccion Dos */
+.seccion-dos{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.seccion-dos img{
+    width: 350px;
+}
+.fuerza{
+    color: #039788;
+    font-weight: 600;
+}
+.seccion-dos h1{
+    margin: 40px;
+    color: #039788;
+    font-weight: 600;
+    font-size: 3em;
+}
+.seccion-dos p{
+    width: 80%;
+    font-size: 1.2em;
+}
+.seccion-dos .slogan{
+    display: flex;
+    margin: 40px;
+    color: #039788;
+}
+.seccion-dos .slogan h2:nth-child(even){
+    color: #5100ff;
+}
+
+.seccion-dos .slogan h2{
+    margin: 0 10px;
+    transition: 1s;
+}
+.seccion-dos .slogan h2:hover{
+    scale: 115%;
+}
+/* Footer */
+.footer{
+    margin-top: 80px;
+    display: flex;
+    background-color: #616161;
+    padding: 40px;
+    color: #fff;
+    justify-content: space-between;
+}
+.footer .col-uno{
+    width: 30%;
+}
+.footer .col-uno img{
+    width: 200px;
+}
+.footer .col-uno p{
+    font-size: .8em;
+    margin: 20px 0;
+}
+.footer .col-uno a{
+    color: #5100ff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 20px;
+    width: 120px;
+}
+.footer .col-uno a:hover{
+    color: #fff;
+}
+.footer .col-dos{
+    width: 30%;
+}
+.footer .col-dos p{
+    margin: 40px 0;
+}
+.footer .col-dos .footer-servicios{
+    display: flex;
+    flex-direction: column;
+}
+.footer .col-dos a{
+    color: #5100ff;
+    text-decoration: none;
+    display: block;
+    width: 210px;
+    margin-bottom: 20px;
+}
+.footer .col-dos a:hover{
+    color: #fff;
+}
+.footer .col-tres{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer .col-tres img{
+    width: 200px;
+}
+.footer .col-tres .contacto-directo{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.footer .col-tres .contacto-directo a{
+    color: #fff;
+    font-size: 2.5em;
+    transition: 1s;
+}
+.footer .col-tres .contacto-directo a:hover{
+    color: #039788;
+    scale: 110%;
+}
+
+
+/* Responsive */
+@media (max-width: 992px) {
+    /* Header */
+  .menu .logo img {
+    display: none;
+  }
+  .menu {
+    justify-content: center;
+    align-items: center;
+  }
+  ul.menu a {
+    padding: 25px 10px;
+    font-size: .8em;
+  }
+  /* Slider */    
+  .content-overlay {
+    left: 50%;
+  }
+  .content-overlay h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    width: 90%;
+  }
+  .slider-btn {
+    background-color: rgba(173, 173, 173, 0.5);
+  }
+  /* Seccion Dos */
+  .seccion-dos{
+    padding: 20px;
+}
+  .seccion-dos img{
+      width: 250px;
+  }
+  .fuerza{
+      color: #039788;
+      font-weight: 600;
+  }
+  .seccion-dos h1{
+      margin: 30px 10px;
+      text-align: center;
+      font-size: 2em;
+  }
+  .seccion-dos p{
+      width: 95%;
+      text-align: center;
+  }
+  .seccion-dos .slogan{
+      flex-direction: column;
+      text-align: center;
+      margin: 80px;
+  }
+  .seccion-dos .slogan h2{
+    padding: 10px;
+  }
+  /* Footer */
+  .footer{
+    flex-direction: column;
+      margin-top: 60px;
+      align-items: center;
+      padding: 10px;
+  }
+  .footer .col-uno{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+  .footer .col-dos{
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .footer .col-dos p{
+      margin: 40px 0 20px 0;
+  }
+  .footer .col-tres{
+      width: 100%;
+      margin-top: 40px;
+      margin-bottom: 40px;
+  }
+  .footer .col-tres img{
+      width: 250px;
+  }
+  .footer .col-tres .contacto-directo{
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+  }
+  .footer .col-tres .contacto-directo a{
+      color: #fff;
+      font-size: 2.5em;
+      transition: 1s;
+  }
+  .footer .col-tres .contacto-directo a:hover{
+      color: #039788;
+      scale: 110%;
+  }
+}
