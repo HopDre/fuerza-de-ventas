@@ -26,7 +26,7 @@ let currentSlide = 0;
   function startAutoSlide() {
     intervalId = setInterval(() => {
       nextSlide();
-    }, 10000); // Cambia de slide cada 5 segundos (puedes ajustar el intervalo según tus necesidades)
+    }, 5000); // Cambia de slide cada 5 segundos (puedes ajustar el intervalo según tus necesidades)
   }
 
   function stopAutoSlide() {
